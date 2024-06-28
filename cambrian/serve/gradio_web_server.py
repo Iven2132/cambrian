@@ -335,8 +335,8 @@ def build_demo(embed_mode, cur_dir=None, concurrency_count=10):
                 if cur_dir is None:
                     cur_dir = os.path.dirname(os.path.abspath(__file__))
                 gr.Examples(examples=[
-                    [f"{cur_dir}/examples/chicken_world.webp", "What does this image remind you of"],
-                    [f"{cur_dir}/examples/math.png", "Please solve this question step by step."],
+                    ["What does this image remind you of"],
+                    ["Please solve this question step by step."],
 
                 ], inputs=[imagebox, textbox])
 
